@@ -17,6 +17,7 @@ plugins:
   id: "85c9d396-5330-11ee-8c99-0242ac120002"
   enabled: true
   config:
+    storage: shm
     account_email: "{vault://env/acme/account_email}"
     renew_threshold_days: 30
     domains:
