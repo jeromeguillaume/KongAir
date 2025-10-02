@@ -97,7 +97,7 @@ services:
   name: routes-service
   path: /
   plugins: []
-  port: 8081
+  port: 8079
   protocol: http
   routes:
   - id: 4da7a5e5-9e69-59af-a6c3-46a675c5bac6
