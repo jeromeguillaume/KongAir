@@ -8,6 +8,7 @@ services:
     image: 'ghcr.io/jeromeguillaume/kongair-flights:latest'
     container_name: flights.kongair
     restart: on-failure
+    platform: linux/amd64
     networks:
       - kong-air-net
 
@@ -15,6 +16,7 @@ services:
     image: 'ghcr.io/jeromeguillaume/kongair-routes:latest'
     container_name: routes.kongair
     restart: on-failure
+    platform: linux/amd64
     networks:
       - kong-air-net
 
@@ -22,15 +24,17 @@ services:
     image: 'ghcr.io/jeromeguillaume/kongair-bookings:latest'
     container_name: bookings.kongair
     restart: on-failure
+    platform: linux/amd64
     networks:
       - kong-air-net
     environment:
-      FLIGHT_SVC_ENDPOINT: http://flights.kongair:8079
+      FLIGHT_SVC_ENDPOINT: http://flights.kongair:8079    
 
   customer.kongair:
     image: 'ghcr.io/jeromeguillaume/kongair-customer:latest'
     container_name: customer.kongair
     restart: on-failure
+    platform: linux/amd64
     networks:
       - kong-air-net
 
@@ -38,6 +42,7 @@ services:
     image: 'ghcr.io/jeromeguillaume/kongair-experience:latest'
     container_name: experience.kongair
     restart: on-failure
+    platform: linux/amd64
     networks:
       - kong-air-net
 
