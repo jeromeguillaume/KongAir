@@ -32,18 +32,6 @@ consumers:
   tags:
   - platform-repo-managed
   username: jsmith
-plugins:
-- config:
-    account_email: '{vault://env/acme/account_email}'
-    domains:
-    - api.kong-air.com
-    renew_threshold_days: 30
-    storage: shm
-  enabled: true
-  id: 85c9d396-5330-11ee-8c99-0242ac120002
-  name: acme
-  tags:
-  - platform-repo-managed
 services:
 - host: flights.kongair
   id: 0cef4d36-9c39-5ac2-9d9f-190d8ea8a252
@@ -60,8 +48,6 @@ services:
     paths:
     - ~/flights$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -74,8 +60,6 @@ services:
     paths:
     - ~/flights/(?<flightnumber>[^#?/]+)$
     plugins: []
-    protocols:
-    - https
     regex_priority: 100
     strip_path: false
     tags:
@@ -88,8 +72,6 @@ services:
     paths:
     - ~/flights/(?<flightnumber>[^#?/]+)/details$
     plugins: []
-    protocols:
-    - https
     regex_priority: 100
     strip_path: false
     tags:
@@ -102,8 +84,6 @@ services:
     paths:
     - ~/health$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -127,8 +107,6 @@ services:
     paths:
     - ~/health$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -141,8 +119,6 @@ services:
     paths:
     - ~/routes$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -155,8 +131,6 @@ services:
     paths:
     - ~/routes/(?<id>[^#?/]+)$
     plugins: []
-    protocols:
-    - https
     regex_priority: 100
     strip_path: false
     tags:
@@ -185,8 +159,6 @@ services:
     paths:
     - ~/bookings$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -199,8 +171,6 @@ services:
     paths:
     - ~/bookings$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -213,8 +183,6 @@ services:
     paths:
     - ~/health$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -227,8 +195,6 @@ services:
     paths:
     - ~/health$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -257,8 +223,6 @@ services:
     paths:
     - ~/customer$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -271,8 +235,6 @@ services:
     paths:
     - ~/health$
     plugins: []
-    protocols:
-    - https
     regex_priority: 200
     strip_path: false
     tags:
@@ -325,18 +287,4 @@ services:
     - platform-repo-managed
   tags:
   - platform-repo-managed
-- name: acme-dummy-service
-  routes:
-  - hosts:
-    - api.kong-air.com
-    name: acme-dummy-route
-    paths:
-    - /.well-known/acme-challenge
-    protocols:
-    - http
-    tags:
-    - platform-repo-managed
-  tags:
-  - platform-repo-managed
-  url: http://127.0.0.1:65535
 upstreams: []
