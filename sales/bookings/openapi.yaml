@@ -27,6 +27,8 @@ paths:
                   status:
                     type: string
                     example: "OK"
+        '404':
+          description: Not Found
         '500':
           description: Service is unhealthy
           content:
