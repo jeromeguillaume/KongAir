@@ -20,7 +20,7 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/ge
 1. Setup a configuration file: `~/.cloudflared/config.yml`
 
 ```yaml
-url: http://localhost:8081
+url: http://localhost:8079
 tunnel: 55f23fbd-9104-4b47-a14b-d068f9b980aa
 credentials-file: $HOME/.cloudflared/55f23fbd-9104-4b47-a14b-d068f9b980aa.json
 ```

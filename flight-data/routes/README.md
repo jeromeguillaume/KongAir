@@ -43,11 +43,11 @@ for example:
 
 Get all routes:
 ```
-curl -s localhost:8081/routes
+curl -s localhost:8079/routes
 ```
 
 Get route by route code
 ```
-curl -s localhost:8081/routes/LHR-SIN
+curl -s localhost:8079/routes/LHR-SIN
 ```
 

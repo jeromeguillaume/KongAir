@@ -5,5 +5,5 @@ patches:
     - $.services[?(@.name=="routes-service")]
     values:
       host: routes.kongair
-      port: 8081
+      port: 8079
       protocol: http
