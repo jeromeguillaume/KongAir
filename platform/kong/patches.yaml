@@ -4,11 +4,11 @@ _format_version: "1.0"
 patches:
 
   # Ensure all real routes are only serving https
-  - selectors:
-    - $.services[*].routes[?(@.name != "acme-dummy-route")]
-    values:
-      protocols:
-      - https
+  #- selectors:
+  #  - $.services[*].routes[?(@.name != "acme-dummy-route")]
+  #  values:
+  #    protocols:
+  #    - https
 
   # Add defaults for plugin configurations that the teams
   # can use easily
