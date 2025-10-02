@@ -32,7 +32,7 @@ consumers:
   - name: gold
   jwt_secrets:
   - algorithm: HS256
-    key: null
+    key: B1HkQ3eu4tMQXjGZ2qHM3uFqjsW4IKtv
     secret: Solution-Demo-for-kong-Secret-2025!
     tags:
     - platform-repo-managed
