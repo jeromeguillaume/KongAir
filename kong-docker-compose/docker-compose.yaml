@@ -24,6 +24,8 @@ services:
     restart: on-failure
     networks:
       - kong-air-net
+    environment:
+      FLIGHT_SVC_ENDPOINT: http://flights.kongair:8079
 
   customer.kongair:
     image: 'ghcr.io/jeromeguillaume/kongair-customer:latest'
