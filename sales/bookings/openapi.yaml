@@ -39,6 +39,13 @@ paths:
                   status:
                     type: string
                     example: "unhealthy"
+    post:
+      summary: Health check endpoint for Kubernetes
+      description: Endpoint that returns the service health status.
+      responses:
+        '200':
+          description: Service is healthy
+
   "/bookings":
     get:
       tags:
