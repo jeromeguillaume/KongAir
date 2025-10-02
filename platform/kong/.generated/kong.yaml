@@ -220,6 +220,20 @@ services:
     tags:
     - sales
     - platform-repo-managed
+  - id: 1670c960-9c10-5dc7-8bd9-cb71a35c367b
+    methods:
+    - POST
+    name: bookings-service_health_post
+    paths:
+    - ~/health$
+    plugins: []
+    protocols:
+    - https
+    regex_priority: 200
+    strip_path: false
+    tags:
+    - sales
+    - platform-repo-managed
   tags:
   - sales
   - platform-repo-managed
