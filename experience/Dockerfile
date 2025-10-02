@@ -11,6 +11,6 @@ RUN npm ci --omit=dev
 
 COPY . .
 
-EXPOSE 4000
+EXPOSE 8084
 ENTRYPOINT ["/tini", "--"]
-CMD [ "node", "index.js" ]
+CMD [ "node", "index.js", "8084" ]

@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 8083
 ENTRYPOINT ["/tini", "--"]
-CMD [ "node", "main.js", 8083 ]
+CMD [ "node", "main.js", "8083" ]
