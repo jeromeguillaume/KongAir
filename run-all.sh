@@ -2,6 +2,10 @@
 
 source PORTS.env
 
+export FLIGHT_SVC_ENDPOINT="http://localhost:$KONG_AIR_FLIGHTS_PORT"
+
+echo $FLIGHT_SVC_ENDPOINT
+
 ./kill-all.sh
 echo "------------------------------------"
 

@@ -66,7 +66,7 @@ module.exports = function (bookingsStore) {
   app.post('/bookings', async (req, res, next) => {
     try {
       const flightResponse = await axios.get(
-        `${process.env.FLIGHT_SVC_ENDPOINT}${req.body.flight_number}`);
+        `${process.env.FLIGHT_SVC_ENDPOINT}/flights/${req.body.flight_number}`);
 
       const newBooking = {
         ticket_number:
