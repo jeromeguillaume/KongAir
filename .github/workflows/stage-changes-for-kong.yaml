@@ -10,17 +10,6 @@ on:
       - 'platform/kong/.generated/kong.yaml'
 
 jobs:
-
-#  this job is useful to debug workflows, see https://github.com/mheap/debug-artifact
-  debug-artifacts:
-    name: Upload Debug Artifacts
-    runs-on: ubuntu-latest
-    steps:
-      - name: Upload Debug Artifacts
-        uses: mheap/debug-artifact@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   has-changes:
     name: Have specs, configurations, or pipeline files changed
     runs-on: ubuntu-latest
