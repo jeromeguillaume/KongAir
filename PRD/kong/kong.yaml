@@ -19,19 +19,48 @@ consumer_groups:
 consumers:
 - groups:
   - name: platinum
+  jwt_secrets:
+  - algorithm: HS256
+    key: 1kVXYL5NarltY3qztOPz1PhaVmyYiKct
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
   tags:
   - platform-repo-managed
   username: dfreese
 - groups:
   - name: gold
+  jwt_secrets:
+  - algorithm: HS256
+    key: B1HkQ3eu4tMQXjGZ2qHM3uFqjsW4IKtv
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
   tags:
   - platform-repo-managed
   username: jdoe
 - groups:
   - name: silver
+  jwt_secrets:
+  - algorithm: HS256
+    key: 8KWyjzsPpjkh5s7GTXw9hdp2tgnlXcyD
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
   tags:
   - platform-repo-managed
   username: jsmith
+- groups:
+  - name: gold
+  jwt_secrets:
+  - algorithm: HS256
+    key: JKHUKUY8893YHKNJNojkbkiuiydd989Y
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
+  tags:
+  - platform-repo-managed
+  username: francetv
 services:
 - host: flights.kongair
   id: 0cef4d36-9c39-5ac2-9d9f-190d8ea8a252
