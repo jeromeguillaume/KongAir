@@ -23,7 +23,7 @@ async function startApolloServer() {
     }),
   });
 
-  const port = process.argv[2] || 4000; // Getting port from command line arguments, with a default value of 4000
+  const port = process.argv[2] || 8084; // Getting port from command line arguments, with a default value of 4000
 
   const { url } = await startStandaloneServer(server, {
     context: async ({ req }) => {

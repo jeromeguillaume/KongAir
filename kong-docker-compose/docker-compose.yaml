@@ -8,7 +8,7 @@ services:
     image: 'ghcr.io/jeromeguillaume/kongair-flights:latest'
     container_name: flights.kongair
     restart: on-failure
-    platform: linux/amd64
+    platform: linux/arm64
     networks:
       - kong-air-net
 
@@ -16,7 +16,7 @@ services:
     image: 'ghcr.io/jeromeguillaume/kongair-routes:latest'
     container_name: routes.kongair
     restart: on-failure
-    platform: linux/amd64
+    platform: linux/arm64
     networks:
       - kong-air-net
 

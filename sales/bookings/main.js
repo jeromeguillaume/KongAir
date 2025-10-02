@@ -9,7 +9,7 @@ const app = appFactory(bookingsStore);
 
 // Use the third command-line argument as the port number
 //  or default to 3000
-const port = process.argv[2] || 3000;
+const port = process.argv[2] || 8082;
 
 app.listen(port, () => {
   console.log(`Booking service is running on port ${port}`);
