@@ -32,7 +32,7 @@ consumers:
   - name: gold
   jwt_secrets:
   - algorithm: HS256
-    key: null
+    key: B1HkQ3eu4tMQXjGZ2qHM3uFqjsW4IKtv
     secret: Solution-Demo-for-kong-Secret-2025!
     tags:
     - platform-repo-managed
@@ -50,6 +50,17 @@ consumers:
   tags:
   - platform-repo-managed
   username: jsmith
+- groups:
+  - name: gold
+  jwt_secrets:
+  - algorithm: HS256
+    key: JKHUKUY8893YHKNJNojkbkiuiydd989Y
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
+  tags:
+  - platform-repo-managed
+  username: francetv
 services:
 - host: flights.kongair
   id: 0cef4d36-9c39-5ac2-9d9f-190d8ea8a252
