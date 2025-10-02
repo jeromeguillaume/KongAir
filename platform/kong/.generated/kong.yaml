@@ -19,16 +19,34 @@ consumer_groups:
 consumers:
 - groups:
   - name: platinum
+  jwt_secrets:
+  - algorithm: HS256
+    key: 1kVXYL5NarltY3qztOPz1PhaVmyYiKct
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
   tags:
   - platform-repo-managed
   username: dfreese
 - groups:
   - name: gold
+  jwt_secrets:
+  - algorithm: HS256
+    key: null
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
   tags:
   - platform-repo-managed
   username: jdoe
 - groups:
   - name: silver
+  jwt_secrets:
+  - algorithm: HS256
+    key: 8KWyjzsPpjkh5s7GTXw9hdp2tgnlXcyD
+    secret: Solution-Demo-for-kong-Secret-2025!
+    tags:
+    - platform-repo-managed
   tags:
   - platform-repo-managed
   username: jsmith
