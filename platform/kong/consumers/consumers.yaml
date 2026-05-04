@@ -20,10 +20,3 @@ consumers:
     secret: "Solution-Demo-for-kong-Secret-2025!"
   groups:
   - name: silver
-- username: francetv
-  jwt_secrets:
-  - algorithm: HS256
-    key: "JKHUKUY8893YHKNJNojkbkiuiydd989Y"
-    secret: "Solution-Demo-for-kong-Secret-2025!"
-  groups:
-  - name: gold
